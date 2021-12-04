@@ -1,0 +1,76 @@
+
+<html>
+<head>
+  <script type="text/javascript" src="formChecker.js"></script>
+ <title>Webstore</title>
+
+ <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body style="background-color: orange">
+
+ <div id="page-wrap">
+   <img src="https://media.istockphoto.com/photos/varied-food-carbohydrates-protein-vegetables-fruits-dairy-legumes-on-picture-id1218254547?b=1&k=20&m=1218254547&s=170667a&w=0&h=mOEC7x7qU5NC78mCULs-jAPeLkxy8opOvIbGSnwmAyw=" height="300" width="500">
+
+ <h1 style= "background-color:red">Webstore using php</h1>
+
+ <form action="customerBackend.php" method="post" id="webstore" onsubmit="return isValidate()">
+
+            username: <input type="text" name="username" id="username"><br>
+            password: <input name="password" id="password"><br>
+
+            <h3 style= "color: purple"> Select the items you want to buy and their quantites.</h3>
+            <p> Note: Just type yes in front of the item you want to buy.</p>
+
+            Chocolate: <input type="text" name="item1" id="item1">
+            Chocolate Quantity: <input type="number" name="item1Quantity" id="item1Quantity"><br>
+
+            Bananas: <input type="text" name="item2" id="item2">
+            Bananas Quantity: <input type="number" name="item2Quantity" id="item2Quantity"><br>
+
+            Drink: <input type="text" name="item3" id="item3">
+            Drink Quantity: <input type="number" name="item3Quantity" id="item3Quantity"><br>
+
+            <ol>
+
+                <li>
+
+                    <h3>What type of shipping do you want</h3>
+
+                    <div>
+                        <input type="radio" name="shippingOption" id="shippingOption1" value="free" />
+                        <label for="shippingOption1">A) free 7 day </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="shippingOption" id="shippingOption2" value="overNight" />
+                        <label for="shippingOption2">B) Overnight</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="shippingOption" id="shippingOption3" value="threeDay" />
+                        <label for="shippingOption3">C) Three day</label>
+                    </div>
+
+
+                </li>
+
+
+
+            </ol>
+
+            <input type="submit" value="Submit" class="submitbtn" />
+            <br>
+
+            <input type="button" onclick="reset()" value="Reset"/>
+
+
+
+ </form>
+
+ </div>
+
+
+</body>
+
+</html>
